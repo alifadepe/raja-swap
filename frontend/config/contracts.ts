@@ -1,0 +1,1 @@
+export const RAJA_SWAP_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_RAJA_SWAP_CONTRACT_ADDRESS! as `0x${string}`
