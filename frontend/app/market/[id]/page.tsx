@@ -474,7 +474,7 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
                 )}
               </div>
 
-              {filledAmount !== undefined && BigInt(order.amountBuy) > 0n && (
+              {filledAmount !== undefined && BigInt(order.amountBuy) > BigInt(0) && (
                 <>
                   <div>Filled</div>
                   <div className="text-right">
