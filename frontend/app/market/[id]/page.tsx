@@ -201,7 +201,7 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
       setStatus('filling')
 
       // Calculate fill amount
-      const remainingAmount = BigInt(order.amountBuy) - (filledAmount as bigint || 0n)
+      const remainingAmount = BigInt(order.amountBuy) - (filledAmount as bigint || BigInt(0))
       const fillAmount = fillAmountInput ? parseEther(fillAmountInput) : remainingAmount
 
       // 2. Fill Order
